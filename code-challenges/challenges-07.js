@@ -22,7 +22,14 @@
 
 const objLat = (obj) => {
     // write your code here
-    console.log(`my name is ${this.obj.charAt(0).firstName} ${this.obj.charAt(0).lastName}I am ${this.obj.age}  YO, and I love ${this.obj.hobby}`);
+    let fNameCapital = obj.firstName.charAt(0).toUpperCase() + obj.firstName.slice(1) + " ";
+
+    let lNameCapital = obj.lastName.charAt(0).toUpperCase() + obj.lastName.slice(1);
+
+    let fullName = fNameCapital + lNameCapital;
+    let str = `my name is ${fullName} I am ${obj.age} YO, and I love ${obj.hobby}.`;
+
+    return str;
 };
 // -------------------------------------------------------------------------------------------------------
 
@@ -87,16 +94,26 @@ const objLat = (obj) => {
 
 const cvFormatter = (arr) => {
     // write your code here
-    for(let i=0; i>arr.length ; i++)
-    {  if (arr.yearsOfExperience > 1 )
-          if (arr.lastName === " ") {
-              console.log("nuul");
-              
-          } else {
-                    console.log(`firstName :${arr.firstName}lastName :${arr.lastName} tech :${arr.tech}`);
-              
-          }
-
+    const cvFormatter = (arr) => {
+        // write your code here
+    
+        let retArr = [];
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i].yearsOfExperience > 1) {
+    
+                let emp = {
+    
+                    fullName: `${arr[i].firstName}${arr[i].lastName ? " " + arr[i].lastName : ""}`,
+                    tech: arr[i].tech
+                }
+    
+                retArr.push(emp);
+            }
+    
+    
+    
+        }
+        return retArr;
     }
 };
 // -------------------------------------------------------------------------------------------------------
