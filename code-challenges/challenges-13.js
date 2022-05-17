@@ -40,7 +40,15 @@
 
 const objectCounter = (obj) => {
     // write your code here
+    const initialValue = 0;
+    let x = 0;
+    const result = obj.reduce(fun, 0);
+    function fun() {
+        return x++;
 
+    }
+
+    return x;
 }
 // -------------------------------------------------------------------------------------------------------
 
@@ -61,6 +69,16 @@ const objectCounter = (obj) => {
 
 const stringReverse = (str) => {
     // write your code here
+    const myArray = str.split(" ");
+    let theStr = "";
+   
+    for (var i = myArray.length - 1; i >= 0; i--) {
+        theStr += myArray[i];
+        if (i != 0)
+            theStr += " ";
+
+    }
+    return theStr;
 
 }
 // -------------------------------------------------------------------------------------------------------
