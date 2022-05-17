@@ -28,6 +28,14 @@
 
 const customerAndAge = (obj) => {
   // write your code here
+  let str = [];
+  for (const prop in obj) {
+
+
+    str.push(`Customer Name :${prop} , Age :${obj[prop]}`);
+
+  }
+return str;
 };
 // -------------------------------------------------------------------------------------------------------
 
