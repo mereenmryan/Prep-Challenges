@@ -25,6 +25,7 @@
 
 const LastWord = (str) => {
     // write your code here
+    return str.slice(str.lastIndexOf(" ")+1);
 }
 // -------------------------------------------------------------------------------------------------------
 
@@ -39,6 +40,8 @@ const LastWord = (str) => {
 
 const LastWord_2 = (str) => {
     // write your code here
+    const myArray = str.split(" ");
+    return myArray[myArray.length-1];
 }
 // -------------------------------------------------------------------------------------------------------
 
@@ -62,6 +65,26 @@ const LastWord_2 = (str) => {
 
 const replaceWords = (str) => {
     // write your code here
+    const arr = str.split(" ");
+    let theStr="";
+  for (var i=0;i<arr.length ; i++)
+  {
+if (arr[i]=="I")
+arr[i]="We";
+if (arr[i]=="am")
+arr[i]="are";
+if (arr[i]=="was")
+arr[i]="were";
+  }
+  for (var i=0;i<arr.length ; i++)
+  {
+    theStr += arr[i];
+    if (i != arr.length -1)
+        theStr += " ";
+
+
+  }
+  return theStr;
 }
 // -------------------------------------------------------------------------------------------------------
 
