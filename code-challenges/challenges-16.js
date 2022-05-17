@@ -14,6 +14,13 @@
 
 const reverseString = (string) => {
     //write your code here ...
+    let str="";
+   
+    for (var i=string.length-1;i>=0 ; i--)
+    { str+=string[i];}
+   
+    return str;
+
 }
 // -------------------------------------------------------------------------------------------------------
 
@@ -30,6 +37,14 @@ const reverseString = (string) => {
 
 const detectFace = (arr) => {
     //write your code here ...
+    let output =[];
+    for (var i=0 ; i<arr.length;i++)
+    {
+
+    if(arr[i].indexOf("^_^") > -1)   
+    output.push(arr[i]);
+    }
+    return output;
 }
 // -------------------------------------------------------------------------------------------------------
 

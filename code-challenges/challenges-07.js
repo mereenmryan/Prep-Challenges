@@ -22,7 +22,6 @@
 
 const objLat = (obj) => {
     // write your code here
-    console.log(`my name is ${this.obj.charAt(0).firstName} ${this.obj.charAt(0).lastName}I am ${this.obj.age}  YO, and I love ${this.obj.hobby}`);
 };
 // -------------------------------------------------------------------------------------------------------
 
@@ -87,17 +86,6 @@ const objLat = (obj) => {
 
 const cvFormatter = (arr) => {
     // write your code here
-    for(let i=0; i>arr.length ; i++)
-    {  if (arr.yearsOfExperience > 1 )
-          if (arr.lastName === " ") {
-              console.log("nuul");
-              
-          } else {
-                    console.log(`firstName :${arr.firstName}lastName :${arr.lastName} tech :${arr.tech}`);
-              
-          }
-
-    }
 };
 // -------------------------------------------------------------------------------------------------------
 
@@ -124,8 +112,6 @@ const cvFormatter = (arr) => {
 
 const applicationsStatics = (arr) => {
     // write your code here
-
-    
 };
 // -------------------------------------------------------------------------------------------------------
 
